@@ -22,7 +22,7 @@ namespace math
   {
   public:
     Sphere (double p_rayon = 0);
-    double reqRayon (const double& p_rayon) const;
+    //double reqRayon (const double& p_rayon) const;
     double volumeSphere (const double& p_rayon) const;
     std::string reqVolumeFormate () const;
   private:
