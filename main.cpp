@@ -26,9 +26,9 @@ int
 main ()
 {
 
-  Sphere infos (10);
+  Sphere infos (10.0);
 
-  //cout << infos.reqRayon (10) << endl;
+  cout << "ok" << endl;
 
   return 0;
 }

@@ -21,15 +21,18 @@ namespace math
   class Sphere
   {
   public:
-    Sphere (double p_rayon = 0);
-    //double reqRayon (const double& p_rayon) const;
-    double volumeSphere (const double& p_rayon) const;
-    std::string reqVolumeFormate () const;
+    Sphere (double p_rayon = 0, const std::string& p_nom = "Sphere"); //constructeur avec paramètre
+    double reqRayon () const;
+    void asgRayon (double p_nouveauRayon);
+    const std::string& reqNom () const;
+    void asgNom (const std::string& p_nom);
+    double volumeSphere () const; //Calcul du volume
+    std::string reqVolumeFormate () const; //Affichage en string
   private:
     double m_rayon;
+    std::string m_nom;
   };
 
 } // namespace math
 
 #endif /* SPHERE_H */
-
